@@ -35,6 +35,6 @@ var palindroma = palindroma(parolaInserita, reverse); // memorizzo in una var il
 
 // verifico il risultato finale
 console.log(palindroma);
-parola.innerHtml = "la parola inserita è una " + palindroma;
+parola.innerHTML = "la parola inserita è una " + palindroma;
 
 // document.getElementById('parola').innerHtml = "la parola inserita è una " + palindroma;
