@@ -16,17 +16,30 @@ function reverseString(str) {  //parto dall'ultima lettere della parola inserita
     }
     return newString;
 }
-var reverse = reverseString(parolaInserita);// memorizzo in una var il contenuto della funzione
+var reverse = reverseString(parolaInserita);// memorizzo in una var il contenuto della funzione per la parola reverse
 console.log(reverse); // Controllo che si ottenga il reverse della parolaInserita
 
-// verifico se la parola è palindroma
-if (parolaInserita === reverse) {
-  parola.innerHtml = "la parola è palindorma";
-  console.log("si");
-}else {
-  parola.innerHtml = "la parola NON è palindorma";
-  console.log("no");
+
+// // verifico se la parola è palindroma
+// if (parolaInserita === reverse) {
+//   parola.innerHtml = "la parola è palindorma";
+//   console.log("si");
+// }else {
+//   parola.innerHtml = "la parola NON è palindorma";
+//   console.log("no");
+// }
+
+//  PROVA-------------------------
+function palindroma(par1, par1Rev){
+  var risultato;
+  if (par1 === par1Rev) {
+    risultato = "Parola palindroma"
+  }else {
+    risultato = "Parola NON palindroma"
+  }
+  return risultato;
 }
 
+var palindroma = palindroma(parolaInserita, reverse);
 
-// console.log(reverse);
+console.log(palindroma);

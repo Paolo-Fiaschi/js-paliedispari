@@ -33,11 +33,11 @@ function pariDispari(num1, num2){
 // memorizzo in una var il contenuto della funzione per vedere se due numeri sono pari o dispari
 var vincitore = pariDispari(numGenerato1, numGenerato2);
 
-// verifico se l'utente ha vinto o perso confrontandolo con il risultato della funzione
+// condizioni per vedere se l'utente ha vinto o perso confrontandolo con il risultato della funzione
 if (scelta == vincitore) {
   scelta = "vinto";
 }else {
   scelta = "perso";
 }
-
+// verifico il risultato finale
 console.log(scelta);
