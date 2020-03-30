@@ -20,15 +20,6 @@ var reverse = reverseString(parolaInserita);// memorizzo in una var il contenuto
 console.log(reverse); // Controllo che si ottenga il reverse della parolaInserita
 
 
-// // verifico se la parola è palindroma
-// if (parolaInserita === reverse) {
-//   parola.innerHtml = "la parola è palindorma";
-//   console.log("si");
-// }else {
-//   parola.innerHtml = "la parola NON è palindorma";
-//   console.log("no");
-// }
-
 //  funzione per vedere se due parole sono o meno palindrome
 function palindroma(par1, par1Rev){
   var risultato;
@@ -44,4 +35,6 @@ var palindroma = palindroma(parolaInserita, reverse); // memorizzo in una var il
 
 // verifico il risultato finale
 console.log(palindroma);
-parola.innerHtml = palindroma;
+parola.innerHtml = "la parola inserita è una " + palindroma;
+
+// document.getElementById('parola').innerHtml = "la parola inserita è una " + palindroma;
