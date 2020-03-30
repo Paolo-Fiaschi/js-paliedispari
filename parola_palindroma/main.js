@@ -29,7 +29,7 @@ console.log(reverse); // Controllo che si ottenga il reverse della parolaInserit
 //   console.log("no");
 // }
 
-//  PROVA-------------------------
+//  funzione per vedere se due parole sono o meno palindrome
 function palindroma(par1, par1Rev){
   var risultato;
   if (par1 === par1Rev) {
@@ -40,6 +40,8 @@ function palindroma(par1, par1Rev){
   return risultato;
 }
 
-var palindroma = palindroma(parolaInserita, reverse);
+var palindroma = palindroma(parolaInserita, reverse); // memorizzo in una var il contenuto della funzione per vedere se due parole sono o meno palindrome
 
+// verifico il risultato finale
 console.log(palindroma);
+parola.innerHtml = palindroma;
